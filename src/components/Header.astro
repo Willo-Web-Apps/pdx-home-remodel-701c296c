@@ -1,11 +1,37 @@
 ---
 ---
-<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/80 backdrop-blur-lg">
+<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/90 backdrop-blur-lg">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-bold tracking-tight text-surface-900 font-display">Your New Business</a>
-    <div class="flex items-center gap-6">
-      <a href="/blog" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a>
-      <a href="#cta" class="text-sm font-semibold bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-600 transition-colors">Get Started</a>
+
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2.5 group">
+      <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center flex-shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-surface-50">
+          <path d="M10.707 2.293a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 1.414 1.414L4 10.414V17a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6.586l.293.293a1 1 0 0 0 1.414-1.414l-7-7Z" />
+        </svg>
+      </div>
+      <span class="font-display font-bold text-base text-surface-900 tracking-tight leading-tight">
+        PDX Home<br class="hidden sm:block" /><span class="hidden sm:inline">Remodel</span><span class="sm:hidden"> Remodel</span>
+      </span>
+    </a>
+
+    <!-- Nav links (desktop) -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#why"     class="text-sm font-body font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Why Us</a>
+      <a href="#work"    class="text-sm font-body font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Services</a>
+      <a href="#contact" class="text-sm font-body font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Contact</a>
     </div>
+
+    <!-- CTA -->
+    <a
+      href="#contact"
+      class="inline-flex items-center gap-1.5 text-sm font-body font-semibold bg-brand-500 text-white px-4 py-2.5 rounded-lg hover:bg-brand-600 transition-colors"
+    >
+      Free Estimate
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-3.5 h-3.5">
+        <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd" />
+      </svg>
+    </a>
+
   </nav>
 </header>

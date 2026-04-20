@@ -1,35 +1,432 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Your New Business" description="I have a construction biz focusing on decks. the business is called PDX home remodel. I want you to create a business front end and outreach to help me get a ton of clients. Also you'll be the crm and build referrals etc">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Your New Business
-      </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        I have a construction biz focusing on decks. the business is called PDX home remodel. I want you to create a business front end and outreach to help me get a ton of clients. Also you'll be the crm and build referrals etc
-      </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
+<Base
+  title="PDX Home Remodel — Custom Deck Builders in Portland, OR"
+  description="Portland's trusted deck builder. Custom composite decks, covered outdoor spaces, and all-season builds with transparent pricing and expert craftsmanship. Serving the Portland metro area."
+>
+
+  <!-- ============================================================
+       HERO — Full-width, dark forest background with layered gradients
+  ============================================================ -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-brand-900">
+    <!-- Layered atmospheric gradients -->
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 15% 60%, oklch(0.52 0.14 140 / 0.35), transparent 55%),
+      radial-gradient(ellipse at 85% 20%, oklch(0.66 0.14 75 / 0.12), transparent 50%),
+      radial-gradient(ellipse at 50% 100%, oklch(0.16 0.07 140 / 0.8), transparent 60%),
+      linear-gradient(160deg, oklch(0.18 0.012 95) 0%, oklch(0.16 0.07 140) 50%, oklch(0.12 0.009 95) 100%);
+    "></div>
+
+    <!-- Subtle texture overlay — diagonal lines -->
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, oklch(0.985 0.004 95) 0px, oklch(0.985 0.004 95) 1px, transparent 1px, transparent 12px);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+      <div class="max-w-3xl">
+        <!-- Eyebrow -->
+        <p class="animate-slide-up inline-flex items-center gap-2 text-cedar-400 font-body font-medium text-sm uppercase tracking-widest mb-6">
+          <span class="inline-block w-8 h-px bg-cedar-500"></span>
+          Portland Metro Deck Builders
+        </p>
+
+        <!-- H1 -->
+        <h1 class="animate-slide-up delay-100 font-display font-bold text-4xl md:text-6xl lg:text-7xl text-surface-50 leading-[1.05] tracking-tight">
+          Custom Decks Built<br>
+          <em class="not-italic text-cedar-400">Right the First Time</em>
+        </h1>
+
+        <!-- Sub -->
+        <p class="animate-slide-up delay-200 mt-6 text-lg md:text-xl text-surface-300 leading-relaxed max-w-xl font-body font-light">
+          Transparent pricing, clean job sites, and craftsmanship built to last decades in Pacific Northwest weather.
+        </p>
+
+        <!-- CTAs -->
+        <div class="animate-slide-up delay-300 mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-cedar-500 text-surface-950 font-body font-semibold rounded-lg hover:bg-cedar-400 transition-colors text-base shadow-lg"
+          >
+            Get My Free Estimate
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" /></svg>
+          </a>
+          <a href="#work" class="inline-flex items-center gap-2 text-surface-300 hover:text-surface-50 font-body font-medium transition-colors text-base">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-cedar-500"><path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM9.555 7.168A1 1 0 0 0 8 8v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2Z" clip-rule="evenodd" /></svg>
+            See our work
+          </a>
+        </div>
+
+        <!-- Micro-proof -->
+        <p class="animate-slide-up delay-400 mt-5 text-sm text-surface-800/60 font-body" style="color: oklch(0.75 0.008 95 / 0.55);">
+          Free estimates · No high-pressure sales · Portland-based crew
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom fade into next section (surface-100) -->
+    <div class="absolute bottom-0 left-0 right-0 h-24" style="background: linear-gradient(to top, oklch(0.965 0.006 95), transparent);"></div>
+  </section>
+
+
+  <!-- ============================================================
+       SOCIAL PROOF BAR
+  ============================================================ -->
+  <section class="bg-surface-100 border-y border-surface-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="animate-slide-up">
+          <p class="font-display font-bold text-4xl text-brand-500">12+</p>
+          <p class="mt-1 text-sm font-body text-surface-800" style="color: oklch(0.45 0.01 95);">Years in Portland</p>
+        </div>
+        <div class="animate-slide-up delay-100">
+          <p class="font-display font-bold text-4xl text-brand-500">340+</p>
+          <p class="mt-1 text-sm font-body" style="color: oklch(0.45 0.01 95);">Decks Completed</p>
+        </div>
+        <div class="animate-slide-up delay-200">
+          <p class="font-display font-bold text-4xl text-brand-500">98%</p>
+          <p class="mt-1 text-sm font-body" style="color: oklch(0.45 0.01 95);">Customer Satisfaction</p>
+        </div>
+        <div class="animate-slide-up delay-300">
+          <p class="font-display font-bold text-4xl text-brand-500">5★</p>
+          <p class="mt-1 text-sm font-body" style="color: oklch(0.45 0.01 95);">Average Google Rating</p>
+        </div>
+      </div>
+      <p class="text-center mt-8 text-sm font-body" style="color: oklch(0.55 0.01 95);">Trusted by Portland homeowners in NE, SE, Lake Oswego, Beaverton, and beyond</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY PDX HOME REMODEL — Features Grid
+  ============================================================ -->
+  <section id="why" class="py-20 md:py-28 lg:py-32 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section header -->
+      <div class="max-w-2xl mb-14">
+        <p class="text-cedar-600 font-body font-medium text-sm uppercase tracking-widest mb-3">Why homeowners choose us</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-surface-900 tracking-tight leading-tight">
+          You deserve a contractor who actually shows up
+        </h2>
+        <p class="mt-4 text-lg font-body leading-relaxed" style="color: oklch(0.42 0.012 95);">
+          No ghost quotes. No surprise costs. No sloppy job sites. Just a well-built deck done on time and on budget.
+        </p>
+      </div>
+
+      <!-- 4-card grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="animate-slide-up bg-surface-100 rounded-2xl p-7 border border-surface-200 hover:border-brand-200 transition-colors group">
+          <div class="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-5 h-5 text-brand-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-surface-900 mb-2">Transparent Pricing</h3>
+          <p class="text-sm font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">You get a detailed written estimate before any work begins. No vague bids that balloon mid-project. What we quote is what you pay.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="animate-slide-up delay-100 bg-surface-100 rounded-2xl p-7 border border-surface-200 hover:border-brand-200 transition-colors group">
+          <div class="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-5 h-5 text-brand-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-surface-900 mb-2">We Show Up on Schedule</h3>
+          <p class="text-sm font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">We send arrival windows, keep you posted on progress, and finish on the agreed timeline. Your time matters as much as your backyard.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="animate-slide-up delay-200 bg-surface-100 rounded-2xl p-7 border border-surface-200 hover:border-brand-200 transition-colors group">
+          <div class="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-5 h-5 text-brand-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m11.99 2.243c-1.032 0-2.024.514-2.619 1.372L2.79 13.214A3 3 0 0 0 5.25 18h13.5a3 3 0 0 0 2.46-4.786L14.61 3.615a3.066 3.066 0 0 0-2.619-1.372ZM12 8.25v4.5m0 3.75h.008v.008H12v-.008Z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-surface-900 mb-2">Immaculate Job Sites</h3>
+          <p class="text-sm font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">We treat your yard with respect. Daily cleanup, protected landscaping, and a final walkthrough so you're thrilled before we shake hands.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="animate-slide-up delay-300 bg-surface-100 rounded-2xl p-7 border border-surface-200 hover:border-brand-200 transition-colors group">
+          <div class="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-5 h-5 text-brand-600">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg text-surface-900 mb-2">PNW-Ready Builds</h3>
+          <p class="text-sm font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">Every deck is engineered for Portland's wet winters and humid summers. We use composite materials and covered structures that stay beautiful for decades.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES — What We Build
+  ============================================================ -->
+  <section id="work" class="py-20 md:py-28 lg:py-32 bg-brand-900" style="background: linear-gradient(150deg, oklch(0.16 0.07 140) 0%, oklch(0.20 0.012 95) 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-2xl mb-14">
+        <p class="text-cedar-400 font-body font-medium text-sm uppercase tracking-widest mb-3">What we build</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-surface-50 tracking-tight leading-tight">
+          From simple decks to full outdoor living spaces
+        </h2>
+        <p class="mt-4 text-lg font-body leading-relaxed text-surface-300">
+          Every project is designed for how you actually use your backyard — built to thrive through Portland's rain, sun, and everything in between.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Service 1 -->
+        <div class="animate-slide-up rounded-2xl border border-surface-800/30 p-8" style="background: oklch(0.22 0.025 140 / 0.5);">
+          <div class="w-12 h-12 rounded-xl bg-cedar-500/20 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6 text-cedar-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-surface-50 mb-3">Custom Composite Decks</h3>
+          <p class="text-sm font-body leading-relaxed text-surface-300">
+            Low-maintenance composite decking that holds its color and structure through years of Portland rain. No splinters, no rot, no annual sealing — just a beautiful deck that performs.
+          </p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Trex, TimberTech, Fiberon options</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Custom railings & stairs</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Built-in lighting & planters</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="animate-slide-up delay-100 rounded-2xl border border-cedar-500/30 p-8" style="background: oklch(0.47 0.11 75 / 0.12);">
+          <div class="w-12 h-12 rounded-xl bg-cedar-500/20 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6 text-cedar-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+            </svg>
+          </div>
+          <div class="inline-block px-2 py-0.5 bg-cedar-500/20 text-cedar-4000 text-xs font-body font-medium rounded mb-3">Most Popular</div>
+          <h3 class="font-display font-semibold text-xl text-surface-50 mb-3">Covered Outdoor Spaces</h3>
+          <p class="text-sm font-body leading-relaxed text-surface-300">
+            Use your deck 365 days a year. Our covered pergolas, patio covers, and screen rooms let you enjoy outdoor living even when Portland does what Portland does.
+          </p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Pergolas & louvered roofs</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Attached & freestanding</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Outdoor heaters & ceiling fans</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="animate-slide-up delay-200 rounded-2xl border border-surface-800/30 p-8" style="background: oklch(0.22 0.025 140 / 0.5);">
+          <div class="w-12 h-12 rounded-xl bg-cedar-500/20 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-6 h-6 text-cedar-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l5.653-4.655m5.8-7.613 2.137 2.137M15.75 4.5a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0Z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-surface-50 mb-3">Deck Repair & Replacement</h3>
+          <p class="text-sm font-body leading-relaxed text-surface-300">
+            Got an aging wood deck that's seen too many Portland winters? We assess what's worth saving, replace what's not, and leave you with a structure that's safe and sharp.
+          </p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Full structural inspection</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Board & railing replacement</li>
+            <li class="flex items-center gap-2 text-sm text-cedar-400 font-body"><span class="text-cedar-500">✓</span> Permit-ready documentation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW IT WORKS — 3 Steps
+  ============================================================ -->
+  <section class="py-20 md:py-28 lg:py-32 bg-surface-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-cedar-600 font-body font-medium text-sm uppercase tracking-widest mb-3">Simple process, real results</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-surface-900 tracking-tight">From first call to finished deck in 3 steps</h2>
+        <p class="mt-4 text-lg font-body leading-relaxed" style="color: oklch(0.42 0.012 95);">
+          We've built a process that eliminates the frustration most homeowners feel when hiring a contractor.
+        </p>
+      </div>
+
+      <div class="relative grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
+
+        <!-- Connector line (desktop only) — vertically centered on the step circles (h-20 = 5rem, so top-[2.5rem]) -->
+        <div class="hidden md:block absolute top-[2.5rem] left-[calc(33%+2.5rem)] right-[calc(33%+2.5rem)] h-px bg-brand-200" style="z-index:0;"></div>
+
+        <!-- Step 1 -->
+        <div class="animate-slide-up text-center relative z-10">
+          <div class="w-20 h-20 rounded-full bg-brand-500 text-surface-50 font-display font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">1</div>
+          <h3 class="font-display font-semibold text-xl text-surface-900 mb-3">Free On-Site Estimate</h3>
+          <p class="text-base font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">
+            We visit your home, measure the space, listen to what you want, and walk you through material and design options. No pressure, no pushy sales tactics — just honest advice.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="animate-slide-up delay-200 text-center relative z-10">
+          <div class="w-20 h-20 rounded-full bg-brand-500 text-surface-50 font-display font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">2</div>
+          <h3 class="font-display font-semibold text-xl text-surface-900 mb-3">Approve Your Detailed Quote</h3>
+          <p class="text-base font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">
+            We send a clear, itemized proposal — materials, labor, timeline, and payment schedule all spelled out. You approve the plan, we lock in your build date.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="animate-slide-up delay-400 text-center relative z-10">
+          <div class="w-20 h-20 rounded-full bg-cedar-500 text-surface-950 font-display font-bold text-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">3</div>
+          <h3 class="font-display font-semibold text-xl text-surface-900 mb-3">Enjoy Your New Deck</h3>
+          <p class="text-base font-body leading-relaxed" style="color: oklch(0.45 0.01 95);">
+            Our crew builds, cleans up, and does a final walkthrough with you. When you're happy, we shake hands. Most projects wrap within the agreed week — no lingering half-finished builds.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="py-20 md:py-28 bg-brand-50" style="background: oklch(0.96 0.02 140);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <p class="text-cedar-700 font-body font-medium text-sm uppercase tracking-widest mb-3">What Portland homeowners say</p>
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-surface-900 tracking-tight">Real reviews from real neighbors</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Review 1 -->
+        <div class="animate-slide-up bg-surface-50 rounded-2xl p-7 shadow-sm border border-surface-200">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-cedar-500 text-lg">★★★★★</span>
+          </div>
+          <p class="font-body text-base leading-relaxed text-surface-800 mb-5">
+            "We got four quotes for our backyard deck. PDX Home Remodel was the only one that showed up on time, explained everything clearly, and didn't make us feel rushed. The deck came out exactly as planned — and they finished two days early."
+          </p>
+          <div>
+            <p class="font-body font-semibold text-surface-900 text-sm">Sarah M.</p>
+            <p class="font-body text-xs" style="color: oklch(0.55 0.01 95);">SE Portland homeowner</p>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="animate-slide-up delay-100 bg-surface-50 rounded-2xl p-7 shadow-sm border border-surface-200">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-cedar-500 text-lg">★★★★★</span>
+          </div>
+          <p class="font-body text-base leading-relaxed text-surface-800 mb-5">
+            "Our old pressure-treated deck was rotting. PDX Home Remodel came out, gave us a straight assessment of what needed to go and what could stay, and replaced it with composite. It looks incredible and we don't have to stain it every spring."
+          </p>
+          <div>
+            <p class="font-body font-semibold text-surface-900 text-sm">Dave & Kim R.</p>
+            <p class="font-body text-xs" style="color: oklch(0.55 0.01 95);">Lake Oswego homeowners</p>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="animate-slide-up delay-200 bg-surface-50 rounded-2xl p-7 shadow-sm border border-surface-200">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-cedar-500 text-lg">★★★★★</span>
+          </div>
+          <p class="font-body text-base leading-relaxed text-surface-800 mb-5">
+            "The covered pergola they built has completely changed how we use our backyard. We're out there even when it's raining now. The crew was professional, fast, and the job site was spotless every evening. Couldn't be happier."
+          </p>
+          <div>
+            <p class="font-body font-semibold text-surface-900 text-sm">Marcus T.</p>
+            <p class="font-body text-xs" style="color: oklch(0.55 0.01 95);">NE Portland homeowner</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       REFERRAL PROGRAM CALLOUT
+  ============================================================ -->
+  <section class="py-16 md:py-20 bg-surface-100 border-y border-surface-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <div class="flex-shrink-0 w-16 h-16 rounded-2xl bg-cedar-100 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" class="w-8 h-8 text-cedar-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+          </svg>
+        </div>
+        <div class="flex-1">
+          <h3 class="font-display font-bold text-2xl text-surface-900 mb-2">Know a neighbor who needs a new deck?</h3>
+          <p class="font-body text-base leading-relaxed" style="color: oklch(0.45 0.01 95);">
+            Our referral program rewards you for spreading the word. When a friend you refer completes their project, you both win. Ask us about current referral bonuses when you get your estimate.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3.5 bg-cedar-500 text-surface-950 font-body font-semibold rounded-lg hover:bg-cedar-400 transition-colors text-sm whitespace-nowrap"
+        >
+          Learn About Referrals
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
+
+  <!-- ============================================================
+       FINAL CTA
+  ============================================================ -->
+  <section id="contact" class="py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0" style="background:
+      radial-gradient(ellipse at 0% 100%, oklch(0.52 0.14 140 / 0.20), transparent 55%),
+      radial-gradient(ellipse at 100% 0%, oklch(0.66 0.14 75 / 0.15), transparent 50%),
+      linear-gradient(135deg, oklch(0.18 0.012 95) 0%, oklch(0.22 0.07 140) 100%);
+    "></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="animate-slide-up text-cedar-400 font-body font-medium text-sm uppercase tracking-widest mb-4">Start your project</p>
+      <h2 class="animate-slide-up delay-100 font-display font-bold text-3xl md:text-5xl text-surface-50 tracking-tight leading-tight mb-6">
+        Ready to love your backyard again?
+      </h2>
+      <p class="animate-slide-up delay-200 font-body text-lg text-surface-300 max-w-xl mx-auto leading-relaxed mb-10">
+        Get a free, no-obligation estimate from Portland's most straightforward deck builders. We respond within one business day.
+      </p>
+
+      <!-- Contact options -->
+      <div class="animate-slide-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+        <a
+          href="tel:+15035550100"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-cedar-500 text-surface-950 font-body font-semibold rounded-lg hover:bg-cedar-400 transition-colors text-base shadow-lg w-full sm:w-auto justify-center"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd" />
+          </svg>
+          Call (503) 555-0100
+        </a>
+        <a
+          href="mailto:hello@pdxhomeremodel.com"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-surface-50/10 text-surface-50 border border-surface-50/20 font-body font-semibold rounded-lg hover:bg-surface-50/20 transition-colors text-base w-full sm:w-auto justify-center"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+            <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+          </svg>
+          Email Us
         </a>
       </div>
+
+      <p class="animate-slide-up delay-400 font-body text-sm" style="color: oklch(0.65 0.008 95 / 0.7);">
+        Free estimate · Portland metro area · Licensed & insured in Oregon
+      </p>
     </div>
   </section>
+
 </Base>

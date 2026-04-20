@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "I have a construction biz focusing on decks. the business is called PDX home remodel. I want you to create a business front end and outreach to help me get a ton of clients. Also you'll be the crm and build referrals etc" } = Astro.props;
+const { title = "PDX Home Remodel — Custom Deck Builders in Portland, OR", description = "Portland's trusted deck builder. Custom composite decks, covered outdoor spaces, transparent pricing, and expert craftsmanship built for PNW weather. Serving the Portland metro area." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -16,16 +16,63 @@ const { title = "Your New Business", description = "I have a construction biz fo
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://pdx-home-remodel.onrender.com" />
+    <meta name="theme-color" content="#2D5016" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PDX Home Remodel" />
+    <meta property="og:url" content="https://pdx-home-remodel.onrender.com" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Geo / local SEO -->
+    <meta name="geo.region" content="US-OR" />
+    <meta name="geo.placename" content="Portland, Oregon" />
+
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Your New Business",
-      "description": "I have a construction biz focusing on decks. the business is called PDX home remodel. I want you to create a business front end and outreach to help me get a ton of clients. Also you'll be the crm and build referrals etc",
-      "url": "https://pdx-home-remodel.onrender.com"
+      "@type": "HomeAndConstructionBusiness",
+      "name": "PDX Home Remodel",
+      "description": "Portland's most trusted deck builders. Custom composite decks, covered outdoor spaces, and expert craftsmanship built to last in PNW weather.",
+      "url": "https://pdx-home-remodel.onrender.com",
+      "telephone": "+15035550100",
+      "email": "hello@pdxhomeremodel.com",
+      "image": "https://pdx-home-remodel.onrender.com/og-image.jpg",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97201",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Portland, OR",
+        "Lake Oswego, OR",
+        "Beaverton, OR",
+        "Gresham, OR",
+        "Tigard, OR",
+        "Tualatin, OR"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Deck Building Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Composite Deck Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Covered Outdoor Spaces & Pergolas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deck Repair & Replacement" } }
+        ]
+      }
     }
     </script>
   </head>
