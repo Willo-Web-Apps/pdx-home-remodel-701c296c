@@ -1,0 +1,20 @@
+# Your New Business
+
+> URL: https://pdx-home-remodel.onrender.com
+
+> I have a construction biz focusing on decks. the business is called PDX home remodel. I want you to create a business front end and outreach to help me get a ton of clients. Also you'll be the crm and build referrals etc
+
+## About
+
+Your New Business is an AI-powered business. This file provides a brief overview for
+language model crawlers and AI assistants.
+
+## Pages
+
+- /: Home — learn about Your New Business and get started
+- /blog: Blog — articles, updates, and insights
+- /blog/[slug]: Individual blog posts
+
+## Contact
+
+For inquiries, please visit our website.
